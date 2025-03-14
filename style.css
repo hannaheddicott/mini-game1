@@ -4,11 +4,18 @@
     font-family: parkinsans;
 }
 
+html {
+    height: 100%;
+    margin: 0;
+}
+
 .everything {
-    position: absolute;  /* Allows precise positioning */
-    top: 30%;            /* Move to center vertically */
-    left: 50%;           /* Move to center horizontally */
-    transform: translate(-50%, -50%); /* Perfect centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: auto; /* Allows scrolling if needed */
 }
 
 .backdrop {
@@ -18,8 +25,9 @@
 body {
     width: 100%;
     height: 100%;
+    margin: 0;
     background-color: #ffa0f45f;
-    padding: 5px;
+
 }
 
 #game {
@@ -86,14 +94,17 @@ button {
     font-size: 19px;
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    padding: 5px 70px;
     width: 230px;
     height: 45px;
-    display: block;        /* Makes it a block element */
-    margin: 270px auto;     /* Centers horizontally */
-    padding: 5px 20px;    /* Adjust padding for better appearance */
-    font-size: 18px;       /* Make it more readable */
-    cursor: pointer;       /* Add a pointer for better UX */
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto; /* 10px vertical margin, auto horizontal centering */
+    display: block;    /* Ensures the button respects auto margins */
+}
+
+
+#button {
+    width: 100%;
 }
 
 .clicked {
@@ -102,14 +113,12 @@ button {
 
 p {
     text-align: center;    /* Centers text */
-    margin-top: -260px;      /* Adds space above it */
 }
 
 #scoreDisplay {
     text-align: center;    /* Centers text */
     font-size: 24px;       /* Make it more readable */
-    font-weight: bold;     /* Makes it stand out */
-    margin-top: 0px;      /* Adds space above it */
+    font-weight: bold;     /* Makes it stand out */     /* Adds space above it */
 }
 
 #block.animate {
