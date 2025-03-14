@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-game!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Parkinsans:wght@300..800&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="everything">
+        <div id="game">
+            <img src="./images/background.jpg" alt="background" class="backdrop">
+            <div id="character">
+                <img src="./images/pink-character.png" alt="pink-character">
+            </div>
+            <div id="block">
+                <img src="./images/rock.png" alt="rock" class="img-rock">
+            </div>
+        </div>
+    </div>
+    <button onclick="startGame()" id="startbtn">Start Game</button>
+    <p>Your Score:</p>
+    <p id="scoreDisplay">0</p>
+    <script src="script.js"></script>
+</body>
+</html>
